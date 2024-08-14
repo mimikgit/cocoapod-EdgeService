@@ -5,7 +5,7 @@ mimik Client Library provides a programmatic way to work with the edgeEngine Run
 @Metadata {
     @CallToAction(purpose: link, url: "https://github.com/mimikgit/cocoapod-EdgeService")
     @PageKind(article)
-    @PageColor(green)
+    @PageColor(orange)
 }
 
 
@@ -91,9 +91,11 @@ After installation, try the following tutorials:
 
 ## Documentation
 
-`EdgeCore/EdgeClient` API reference documentation can be found  [online](https://mimikgit.github.io/cocoapod-EdgeCore/documentation/edgecore/edgeclient). Alternatively a docc archive file can be downloaded as a [zip file](https://github.com/mimikgit/cocoapod-EdgeCore/tree/main/EdgeCore.doccarchive.zip) and opened locally in Xcode.
+`EdgeCore/EdgeClient` API reference documentation can be found  [online](https://mimikgit.github.io/cocoapod-EdgeCore/documentation/edgecore/edgeclient) or as a [zip file](https://github.com/mimikgit/cocoapod-EdgeCore/tree/main/EdgeCore.doccarchive.zip).
 
 `EdgeEngineClient` platform protocol API reference documentation can also be found [online](https://mimikgit.github.io/cocoapod-EdgeCore/documentation/edgecore/edgeengineclient).
+
+`EdgeServiceClient` API reference documentation can also be found [online](https://mimikgit.github.io/cocoapod-EdgeService/documentation/edgeservice/edgeserviceclient) or as a [zip file](https://github.com/mimikgit/cocoapod-EdgeService/tree/main/EdgeService.doccarchive.zip).
 
 ## EdgeServiceClient
 
