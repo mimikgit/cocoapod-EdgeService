@@ -1,0 +1,807 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios15.0-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name EdgeService
+import Alamofire
+import CoreLocation
+import EdgeCore
+import Foundation
+import JWTDecode
+import Swift
+import SwiftyJSON
+import UIKit
+import UniformTypeIdentifiers
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+extension EdgeService.EdgeServiceClient.Backend.mPO {
+  public struct PlaceData : Swift.Codable {
+    public var data: [EdgeService.EdgeServiceClient.Backend.mPO.Place]?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Place : Swift.Codable {
+    public var formatted: Swift.String?
+    public var streetAddress: Swift.String?
+    public var locality: Swift.String?
+    public var region: Swift.String?
+    public var postalCode: Swift.String?
+    public var country: Swift.String?
+    public var addressNumber: Swift.String?
+    public var street: Swift.String?
+    public var geoLocation: [Swift.Double]?
+    public init(formatted: Swift.String?, streetAddress: Swift.String?, locality: Swift.String?, region: Swift.String?, postalCode: Swift.String?, country: Swift.String?, addressNumber: Swift.String?, street: Swift.String?, geoLocation: [Swift.Double]?)
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Backend.mPO {
+  public struct UserLocation : Swift.Codable {
+    public enum ModelType : Swift.String, Swift.Codable {
+      case point
+      public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public var origin: Swift.String?
+    public var type: EdgeService.EdgeServiceClient.Backend.mPO.UserLocation.ModelType
+    public var coordinates: [Swift.Double]
+    public var elevation: Swift.Double?
+    public var speed: Swift.Double?
+    public var bearing: Swift.Double?
+    public var country: Swift.String?
+    public var region: Swift.String?
+    public var city: Swift.String?
+    public var zip: Swift.String?
+    public var isp: Swift.String?
+    public init(origin: Swift.String?, type: EdgeService.EdgeServiceClient.Backend.mPO.UserLocation.ModelType, coordinates: [Swift.Double], elevation: Swift.Double?, speed: Swift.Double?, bearing: Swift.Double?, country: Swift.String?, region: Swift.String?, city: Swift.String?, zip: Swift.String?, isp: Swift.String?)
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Backend.mFD {
+  public struct FriendRequestListData : Swift.Codable {
+    public var data: EdgeService.EdgeServiceClient.Backend.mFD.FriendRequestList?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct FriendRequestList : Swift.Codable {
+    public var owner: EdgeService.EdgeServiceClient.Backend.mPO.NewUser?
+    public var _id: Swift.String?
+    public var _self: Swift.String?
+    public var requests: [EdgeService.EdgeServiceClient.Backend.mFD.FriendRequests]?
+    public var createdAt: Swift.String?
+    public var updatedAt: Swift.String?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Backend.mFD {
+  public struct SentFriendshipsResult : Swift.Codable {
+    public var data: EdgeService.EdgeServiceClient.Backend.mFD.RequestFriendList?
+    public var include: EdgeService.EdgeServiceClient.Backend.mFD.SentFriendshipsResult.SentFriendshipsResultInclude?
+    public struct SentFriendshipsResultInclude : Swift.Codable {
+      public var friends: [EdgeService.EdgeServiceClient.Backend.mFD.FriendData]
+      public func encode(to encoder: any Swift.Encoder) throws
+      public init(from decoder: any Swift.Decoder) throws
+    }
+    public func friendDataFor(request: EdgeService.EdgeServiceClient.Backend.mFD.RequestFriends) -> EdgeService.EdgeServiceClient.Backend.mFD.FriendData?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Backend.mPO {
+  public struct UserData : Swift.Codable {
+    public let data: EdgeService.EdgeServiceClient.Backend.mPO.User?
+    public let include: SwiftyJSON.JSON?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct UserDataArray : Swift.Codable {
+    public let data: [EdgeService.EdgeServiceClient.Backend.mPO.User]?
+    public let include: SwiftyJSON.JSON?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct User : Swift.Codable {
+    public var _id: Swift.String?
+    public var externalIds: [EdgeCore.EdgeClient.JSONValue]?
+    public var email: Swift.String?
+    public var consents: [EdgeService.EdgeServiceClient.Backend.mPO.Consent]?
+    public var ssn: Swift.String?
+    public var name: EdgeService.EdgeServiceClient.Backend.mPO.Name?
+    public var displayName: Swift.String?
+    public var nickName: Swift.String?
+    public var preferredLanguage: Swift.String?
+    public var locale: Swift.String?
+    public var timeZone: Swift.String?
+    public var address: EdgeService.EdgeServiceClient.Backend.mPO.Address?
+    public var phoneNumber: Swift.String?
+    public var gender: Swift.String?
+    public var dateOfBirth: Foundation.Date?
+    public var location: EdgeService.EdgeServiceClient.Backend.mPO.UserLocation?
+    public var attributes: [EdgeService.EdgeServiceClient.Backend.mPO.UserItem]?
+    public var references: [EdgeService.EdgeServiceClient.Backend.mPO.Reference]?
+    public var friendListId: Swift.String?
+    public var avatar: Swift.String?
+    public var createdAt: Swift.String?
+    public var updatedAt: Swift.String?
+    public var appIds: [Swift.String]?
+    public init(_id: Swift.String?, externalIds: [EdgeCore.EdgeClient.JSONValue]?, email: Swift.String?, consents: [EdgeService.EdgeServiceClient.Backend.mPO.Consent]?, ssn: Swift.String?, name: EdgeService.EdgeServiceClient.Backend.mPO.Name?, displayName: Swift.String?, nickName: Swift.String?, preferredLanguage: Swift.String?, locale: Swift.String?, timeZone: Swift.String?, address: EdgeService.EdgeServiceClient.Backend.mPO.Address?, phoneNumber: Swift.String?, gender: Swift.String?, dateOfBirth: Foundation.Date?, location: EdgeService.EdgeServiceClient.Backend.mPO.UserLocation?, attributes: [EdgeService.EdgeServiceClient.Backend.mPO.UserItem]?, references: [EdgeService.EdgeServiceClient.Backend.mPO.Reference]?, friendListId: Swift.String?, avatar: Swift.String?, createdAt: Swift.String?, updatedAt: Swift.String?, appIds: [Swift.String]?)
+    public func attributeForKey(key: Swift.String) -> Swift.String?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Microservice.mBeam {
+  public struct Beam : Swift.Codable {
+    public enum ReadStatus : Swift.String {
+      case unknown
+      case read
+      case unread
+      public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public var id: Swift.String?
+    public var name: Swift.String?
+    public var mimeType: Swift.String?
+    public var url: Swift.String?
+    public var nodeId: Swift.String?
+    public var createTime: Swift.String?
+    public var readStatus: Swift.String?
+    public var thumbnailContentHint: EdgeService.EdgeServiceClient.Microservice.mBeam.BeamThumbnail?
+    public var deletableTime: Swift.String?
+    public var status: EdgeService.EdgeServiceClient.Microservice.mBeam.Beam.ReadStatus {
+      get
+    }
+    public var filename: Swift.String? {
+      get
+    }
+    public var fileExtension: Swift.String? {
+      get
+    }
+    public var uttype: UniformTypeIdentifiers.UTType? {
+      get
+    }
+    public var expirationDate: Foundation.Date {
+      get
+    }
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Microservice.mBeam {
+  public struct BeamThumbnail : Swift.Codable {
+    public var image: Swift.String?
+    public var mimeType: Swift.String?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Backend.mPO {
+  public struct Consent : Swift.Codable {
+    public enum Source : Swift.String, Swift.Codable {
+      case email
+      case phone
+      case web
+      public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public var contactMethod: Swift.String
+    public var contactPoint: Swift.String
+    public var source: EdgeService.EdgeServiceClient.Backend.mPO.Consent.Source
+    public var createdAt: Swift.String
+    public var _id: Foundation.UUID?
+    public init(contactMethod: Swift.String, contactPoint: Swift.String, source: EdgeService.EdgeServiceClient.Backend.mPO.Consent.Source, createdAt: Swift.String, _id: Foundation.UUID?)
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Microservice.mBeam {
+  public struct BeamTokenDataArray : Swift.Codable {
+    public var data: [EdgeService.EdgeServiceClient.Microservice.mBeam.BeamToken]?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Backend.mFD {
+  public struct RequestFriends : Swift.Codable {
+    public var addedAt: Swift.String?
+    public var _id: Swift.String?
+    public var state: Swift.String?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Microservice.mDrive {
+  public struct FileCreate : Swift.Codable {
+    public var name: Swift.String
+    public var mimeType: Swift.String
+    public var localId: Swift.String
+    public var thumbnailBase64: Swift.String
+    public var storageUrl: Foundation.URL
+    public init(name: Swift.String, mimeType: Swift.String, localId: Swift.String, thumbnailBase64: Swift.String, storageUrl: Foundation.URL)
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Microservice.mSuperdrive {
+  public struct NodesData : Swift.Codable {
+    public var type: Swift.String?
+    public var data: [EdgeCore.EdgeClient.Node]?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Backend.mFD {
+  public struct FriendList : Swift.Codable {
+    public var createdAt: Swift.String?
+    public var updatedAt: Swift.String?
+    public var _self: Swift.String?
+    public var friends: [EdgeService.EdgeServiceClient.Backend.mFD.Friends]?
+    public var owner: EdgeService.EdgeServiceClient.Backend.mPO.NewUser?
+    public var _id: Swift.String?
+    public init(createdAt: Swift.String?, updatedAt: Swift.String?, _self: Swift.String?, friends: [EdgeService.EdgeServiceClient.Backend.mFD.Friends]?, owner: EdgeService.EdgeServiceClient.Backend.mPO.NewUser?, _id: Swift.String?)
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Microservice.mDrive {
+  public struct FileArray : Swift.Codable {
+    public var kind: Swift.String?
+    public var files: [EdgeService.EdgeServiceClient.Microservice.mDrive.File]?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Backend.mFD {
+  public struct FriendshipsResult : Swift.Codable {
+    public var data: EdgeService.EdgeServiceClient.Backend.mFD.FriendList?
+    public var include: EdgeService.EdgeServiceClient.Backend.mFD.FriendshipsResult.FriendshipsResultInclude?
+    public struct FriendshipsResultInclude : Swift.Codable {
+      public var friends: [EdgeService.EdgeServiceClient.Backend.mFD.FriendData]
+      public func encode(to encoder: any Swift.Encoder) throws
+      public init(from decoder: any Swift.Decoder) throws
+    }
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Microservice.mBeam {
+  public struct BeamToken : Swift.Codable {
+    public enum TokenStatus : Swift.String {
+      case unknown
+      case active
+      case cancelled
+      case expired
+      public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public var id: Swift.String?
+    public var token: Swift.String?
+    public var name: Swift.String?
+    public var mimeType: Swift.String?
+    public var toNodeId: Swift.String?
+    public var expires: Swift.Int64?
+    public var url: Swift.String?
+    public var playQueueUrl: Swift.String?
+    public var status: Swift.String?
+    public var viewCount: Swift.Int64?
+    public var lastViewedAt: Swift.Int64?
+    public var thumbnailContentHint: EdgeService.EdgeServiceClient.Microservice.mBeam.BeamThumbnail?
+    public var expirationDate: Foundation.Date {
+      get
+    }
+    public var lastViewedDate: Foundation.Date? {
+      get
+    }
+    public var isExpired: Swift.Bool {
+      get
+    }
+    public var tokenStatus: EdgeService.EdgeServiceClient.Microservice.mBeam.BeamToken.TokenStatus {
+      get
+    }
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Microservice.mBeam {
+  public struct NewBeamDevice : Swift.Codable {
+    public var id: Swift.String?
+    public var accountId: Swift.String?
+    public var name: Swift.String?
+    public var os: Swift.String?
+    public var avatar: Swift.String?
+    public var url: Swift.String?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Backend.mFD {
+  public struct FriendData : Swift.Codable {
+    public var data: EdgeService.EdgeServiceClient.Backend.mFD.Friend?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Friend : Swift.Codable {
+    public var email: Swift.String?
+    public var id: Swift.String?
+    public var accountId: Swift.String?
+    public var thumbnailURL: Swift.String?
+    public var avatar: Swift.String?
+    public var attributes: [EdgeService.EdgeServiceClient.Microservice.mSuperdrive.FriendAttribute]?
+    public enum State {
+      case unknown
+      case currentList
+      case incomingList
+      case outgoingList
+      case yourAccount
+      case notListed
+      public static func == (a: EdgeService.EdgeServiceClient.Backend.mFD.Friend.State, b: EdgeService.EdgeServiceClient.Backend.mFD.Friend.State) -> Swift.Bool
+      public func hash(into hasher: inout Swift.Hasher)
+      public var hashValue: Swift.Int {
+        get
+      }
+    }
+    public init(nickname: Swift.String? = nil, email: Swift.String? = nil, id: Swift.String? = nil, accountId: Swift.String? = nil, thumbnailURL: Swift.String? = nil, avatar: Swift.String? = nil, attributes: [EdgeService.EdgeServiceClient.Microservice.mSuperdrive.FriendAttribute]? = nil)
+    public func nickname() -> Swift.String?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Microservice.mSuperdrive {
+  public struct FriendNodesData : Swift.Codable {
+    public var type: Swift.String?
+    public var data: [EdgeService.EdgeServiceClient.Microservice.mSuperdrive.FriendNodesList]?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct FriendNodesList : Swift.Codable {
+    public var accountId: Swift.String
+    public var email: Swift.String
+    public var attributes: [EdgeService.EdgeServiceClient.Microservice.mSuperdrive.FriendAttribute]
+    public var avatar: Swift.String?
+    public var devices: [EdgeCore.EdgeClient.Node]
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Backend.mFD {
+  public struct ReceivedFriendshipsResult : Swift.Codable {
+    public var data: EdgeService.EdgeServiceClient.Backend.mFD.FriendRequestList?
+    public var include: EdgeService.EdgeServiceClient.Backend.mFD.ReceivedFriendshipsResult.ReceivedFriendshipsResultInclude?
+    public struct ReceivedFriendshipsResultInclude : Swift.Codable {
+      public var friends: [EdgeService.EdgeServiceClient.Backend.mFD.FriendData]
+      public func encode(to encoder: any Swift.Encoder) throws
+      public init(from decoder: any Swift.Decoder) throws
+    }
+    public func friendDataFor(request: EdgeService.EdgeServiceClient.Backend.mFD.FriendRequests) -> EdgeService.EdgeServiceClient.Backend.mFD.FriendData?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Backend.mPO {
+  public struct AddressSuggestionData : Swift.Codable {
+    public var data: [EdgeService.EdgeServiceClient.Backend.mPO.AddressSuggestion]?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct AddressSuggestion : Swift.Codable {
+    public var text: Swift.String?
+    public init(text: Swift.String?)
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Backend.mPO {
+  public struct NewConsent : Swift.Codable {
+    public enum ModelType : Swift.String, Swift.Codable {
+      case marketing
+      case transactional
+      public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public enum Source : Swift.String, Swift.Codable {
+      case email
+      case phone
+      case web
+      case termsOfService
+      public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public var type: EdgeService.EdgeServiceClient.Backend.mPO.NewConsent.ModelType
+    public var contactMethod: Swift.String
+    public var contactPoint: Swift.String
+    public var source: EdgeService.EdgeServiceClient.Backend.mPO.NewConsent.Source
+    public var createdAt: Foundation.Date
+    public init(type: EdgeService.EdgeServiceClient.Backend.mPO.NewConsent.ModelType, contactMethod: Swift.String, contactPoint: Swift.String, source: EdgeService.EdgeServiceClient.Backend.mPO.NewConsent.Source, createdAt: Foundation.Date)
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+public struct EdgeServiceClient : Swift.Codable {
+  public struct Microservice {
+    public struct mBeam : Swift.Codable {
+      #if compiler(>=5.3) && $AsyncAwait
+      public static func beams(userAccessToken: Swift.String, edgeEngineFullPathUrl: Foundation.URLComponents, microservice: EdgeCore.EdgeClient.Microservice, ownerCode: Swift.String) async -> Swift.Result<EdgeService.EdgeServiceClient.Microservice.mBeam.BeamDataArray, Foundation.NSError>
+      #endif
+      #if compiler(>=5.3) && $AsyncAwait
+      public static func create(beam: EdgeService.EdgeServiceClient.Microservice.mBeam.CreateBeam, userAccessToken: Swift.String, edgeEngineFullPathUrl: Foundation.URLComponents, edgeAccessToken: Swift.String, microservice: EdgeCore.EdgeClient.Microservice, ownerCode: Swift.String) async -> Swift.Result<EdgeService.EdgeServiceClient.Microservice.mBeam.NewBeamData, Foundation.NSError>
+      #endif
+      #if compiler(>=5.3) && $AsyncAwait
+      public static func deleteBeam(id: Swift.String, userAccessToken: Swift.String, edgeEngineFullPathUrl: Foundation.URLComponents, microservice: EdgeCore.EdgeClient.Microservice, ownerCode: Swift.String) async -> Swift.Result<EdgeService.EdgeServiceClient.Microservice.mBeam.Beam, Foundation.NSError>
+      #endif
+      #if compiler(>=5.3) && $AsyncAwait
+      public static func updateBeam(id: Swift.String, userAccessToken: Swift.String, edgeEngineFullPathUrl: Foundation.URLComponents, microservice: EdgeCore.EdgeClient.Microservice, ownerCode: Swift.String, status: EdgeService.EdgeServiceClient.Microservice.mBeam.Beam.ReadStatus) async -> Swift.Result<EdgeService.EdgeServiceClient.Microservice.mBeam.Beam, Foundation.NSError>
+      #endif
+      #if compiler(>=5.3) && $AsyncAwait
+      public static func openBeam(id: Swift.String, userAccessToken: Swift.String, edgeEngineFullPathUrl: Foundation.URLComponents, edgeAccessToken: Swift.String, microservice: EdgeCore.EdgeClient.Microservice, ownerCode: Swift.String) async -> Swift.Result<EdgeService.EdgeServiceClient.Microservice.mBeam.Beam, Foundation.NSError>
+      #endif
+      #if compiler(>=5.3) && $AsyncAwait
+      public static func deleteBeamToken(id: Swift.String, userAccessToken: Swift.String, edgeEngineFullPathUrl: Foundation.URLComponents, microservice: EdgeCore.EdgeClient.Microservice, ownerCode: Swift.String) async -> Swift.Result<EdgeService.EdgeServiceClient.Microservice.mBeam.BeamTokenData, Foundation.NSError>
+      #endif
+      #if compiler(>=5.3) && $AsyncAwait
+      public static func updateBeamToken(id: Swift.String, userAccessToken: Swift.String, edgeEngineFullPathUrl: Foundation.URLComponents, microservice: EdgeCore.EdgeClient.Microservice, ownerCode: Swift.String, status: EdgeService.EdgeServiceClient.Microservice.mBeam.BeamToken.TokenStatus) async -> Swift.Result<EdgeService.EdgeServiceClient.Microservice.mBeam.BeamTokenData, Foundation.NSError>
+      #endif
+      #if compiler(>=5.3) && $AsyncAwait
+      public static func beamTokens(userAccessToken: Swift.String, edgeEngineFullPathUrl: Foundation.URLComponents, microservice: EdgeCore.EdgeClient.Microservice, ownerCode: Swift.String) async -> Swift.Result<EdgeService.EdgeServiceClient.Microservice.mBeam.BeamTokenDataArray, Foundation.NSError>
+      #endif
+      public func encode(to encoder: any Swift.Encoder) throws
+      public init(from decoder: any Swift.Decoder) throws
+    }
+    public struct mSuperdrive : Swift.Codable {
+      #if compiler(>=5.3) && $AsyncAwait
+      public static func friendNodes(userAccessToken: Swift.String, edgeEngineFullPathUrl: Foundation.URLComponents, edgeAccessToken: Swift.String, microservice: EdgeCore.EdgeClient.Microservice) async -> Swift.Result<EdgeService.EdgeServiceClient.Microservice.mSuperdrive.FriendNodesData, Foundation.NSError>
+      #endif
+      #if compiler(>=5.3) && $AsyncAwait
+      public static func accountNodes(userAccessToken: Swift.String, edgeEngineFullPathUrl: Foundation.URLComponents, microservice: EdgeCore.EdgeClient.Microservice, edgeAccessToken: Swift.String) async -> Swift.Result<EdgeService.EdgeServiceClient.Microservice.mSuperdrive.NodesData, Foundation.NSError>
+      #endif
+      #if compiler(>=5.3) && $AsyncAwait
+      public static func nearbyNodes(userAccessToken: Swift.String, edgeEngineFullPathUrl: Foundation.URLComponents, microservice: EdgeCore.EdgeClient.Microservice, edgeAccessToken: Swift.String) async -> Swift.Result<EdgeService.EdgeServiceClient.Microservice.mSuperdrive.NodesData, Foundation.NSError>
+      #endif
+      #if compiler(>=5.3) && $AsyncAwait
+      public static func nodePresenceCheck(nodeId: Swift.String, userAccessToken: Swift.String, edgeEngineFullPathUrl: Foundation.URLComponents, edgeAccessToken: Swift.String, microservice: EdgeCore.EdgeClient.Microservice) async -> Swift.Result<EdgeCore.EdgeClient.Node, Foundation.NSError>
+      #endif
+      public func encode(to encoder: any Swift.Encoder) throws
+      public init(from decoder: any Swift.Decoder) throws
+    }
+    public struct mDrive : Swift.Codable {
+      #if compiler(>=5.3) && $AsyncAwait
+      public static func fileWith(localId: Swift.String, userAccessToken: Swift.String, edgeEngineFullPathUrl: Foundation.URLComponents, microservice: EdgeCore.EdgeClient.Microservice) async -> Swift.Result<EdgeService.EdgeServiceClient.Microservice.mDrive.File, Foundation.NSError>
+      #endif
+      #if compiler(>=5.3) && $AsyncAwait
+      public static func files(userAccessToken: Swift.String, edgeEngineFullPathUrl: Foundation.URLComponents, microservice: EdgeCore.EdgeClient.Microservice) async -> Swift.Result<EdgeService.EdgeServiceClient.Microservice.mDrive.FileArray, Foundation.NSError>
+      #endif
+      #if compiler(>=5.3) && $AsyncAwait
+      public static func create(file: EdgeService.EdgeServiceClient.Microservice.mDrive.FileCreate, userAccessToken: Swift.String, edgeEngineFullPathUrl: Foundation.URLComponents, microservice: EdgeCore.EdgeClient.Microservice, driveOwnerCode: Swift.String) async -> Swift.Result<EdgeService.EdgeServiceClient.Microservice.mDrive.File, Foundation.NSError>
+      #endif
+      #if compiler(>=5.3) && $AsyncAwait
+      public static func delete(file: EdgeService.EdgeServiceClient.Microservice.mDrive.File, userAccessToken: Swift.String, edgeEngineFullPathUrl: Foundation.URLComponents, microservice: EdgeCore.EdgeClient.Microservice, driveOwnerCode: Swift.String) async -> Swift.Result<EdgeService.EdgeServiceClient.Microservice.mDrive.File, Foundation.NSError>
+      #endif
+      public func encode(to encoder: any Swift.Encoder) throws
+      public init(from decoder: any Swift.Decoder) throws
+    }
+  }
+  public struct Backend {
+    public struct mPO : Swift.Codable {
+      #if compiler(>=5.3) && $AsyncAwait
+      public static func addUserProfileNotificationsConsent(service: EdgeCore.EdgeClient.Service, authorization: EdgeCore.EdgeClient.Authorization, consent: EdgeService.EdgeServiceClient.Backend.mPO.NewConsent) async -> Swift.Result<EdgeService.EdgeServiceClient.Backend.mPO.UserData, Foundation.NSError>
+      #endif
+      #if compiler(>=5.3) && $AsyncAwait
+      public static func deleteUserProfileNotificationsConsent(service: EdgeCore.EdgeClient.Service, authorization: EdgeCore.EdgeClient.Authorization, consentId: Swift.String) async -> Swift.Result<Swift.Void, Foundation.NSError>
+      #endif
+      #if compiler(>=5.3) && $AsyncAwait
+      public static func findUser(service: EdgeCore.EdgeClient.Service, authorization: EdgeCore.EdgeClient.Authorization, email: Swift.String) async -> Swift.Result<EdgeService.EdgeServiceClient.Backend.mPO.UserDataArray, Foundation.NSError>
+      #endif
+      #if compiler(>=5.3) && $AsyncAwait
+      public static func updateUserProfile(service: EdgeCore.EdgeClient.Service, authorization: EdgeCore.EdgeClient.Authorization, update: EdgeService.EdgeServiceClient.Backend.mPO.UserUpdate) async -> Swift.Result<EdgeService.EdgeServiceClient.Backend.mPO.UserData, Foundation.NSError>
+      #endif
+      #if compiler(>=5.3) && $AsyncAwait
+      public static func updateUserProfileProperties(service: EdgeCore.EdgeClient.Service, authorization: EdgeCore.EdgeClient.Authorization, parameters: [Swift.String : Any]) async -> Swift.Result<EdgeService.EdgeServiceClient.Backend.mPO.UserData, Foundation.NSError>
+      #endif
+      #if compiler(>=5.3) && $AsyncAwait
+      public static func updateUserProfileAttributes(service: EdgeCore.EdgeClient.Service, authorization: EdgeCore.EdgeClient.Authorization, attributes: [EdgeService.EdgeServiceClient.Backend.mPO.UserItem]) async -> Swift.Result<EdgeService.EdgeServiceClient.Backend.mPO.UserData, Foundation.NSError>
+      #endif
+      #if compiler(>=5.3) && $AsyncAwait
+      public static func userProfile(service: EdgeCore.EdgeClient.Service, authorization: EdgeCore.EdgeClient.Authorization) async -> Swift.Result<EdgeService.EdgeServiceClient.Backend.mPO.UserData, Foundation.NSError>
+      #endif
+      #if compiler(>=5.3) && $AsyncAwait
+      public static func updateUserAvatarLegacy(service: EdgeCore.EdgeClient.Service, authorization: EdgeCore.EdgeClient.Authorization, profileUser: EdgeService.EdgeServiceClient.Backend.mPO.User, image: UIKit.UIImage, attributeKey: Swift.String?, targetSize: CoreFoundation.CGSize?, compressionQuality: CoreFoundation.CGFloat?, bytesLimit: Swift.Int?) async -> Swift.Result<EdgeService.EdgeServiceClient.Backend.mPO.UserData, Foundation.NSError>
+      #endif
+      #if compiler(>=5.3) && $AsyncAwait
+      public static func userAvatarLegacy(service: EdgeCore.EdgeClient.Service, authorization: EdgeCore.EdgeClient.Authorization, profileUser: EdgeService.EdgeServiceClient.Backend.mPO.User) async -> Swift.Result<UIKit.UIImage, Foundation.NSError>
+      #endif
+      #if compiler(>=5.3) && $AsyncAwait
+      public static func addressSuggestions(service: EdgeCore.EdgeClient.Service, authorization: EdgeCore.EdgeClient.Authorization, address: Swift.String, maxSuggestions: Swift.Int?, language: Swift.String?, countries: [Swift.String]?, geoLocation: CoreLocation.CLLocation? = nil, geoFence: (southWest: CoreLocation.CLLocation, northEast: CoreLocation.CLLocation)? = nil) async -> Swift.Result<EdgeService.EdgeServiceClient.Backend.mPO.AddressSuggestionData, Foundation.NSError>
+      #endif
+      #if compiler(>=5.3) && $AsyncAwait
+      public static func places(service: EdgeCore.EdgeClient.Service, authorization: EdgeCore.EdgeClient.Authorization, address: Swift.String, maxPlaces: Swift.Int?, language: Swift.String?, countries: [Swift.String]?, geoLocation: CoreLocation.CLLocation? = nil, geoFence: (southWest: CoreLocation.CLLocation, northEast: CoreLocation.CLLocation)? = nil) async -> Swift.Result<EdgeService.EdgeServiceClient.Backend.mPO.PlaceData, Foundation.NSError>
+      #endif
+      public func encode(to encoder: any Swift.Encoder) throws
+      public init(from decoder: any Swift.Decoder) throws
+    }
+    public struct mFD : Swift.Codable {
+      #if compiler(>=5.3) && $AsyncAwait
+      public static func friends(service: EdgeCore.EdgeClient.Service, authorization: EdgeCore.EdgeClient.Authorization) async -> Swift.Result<EdgeService.EdgeServiceClient.Backend.mFD.FriendshipsResult, Foundation.NSError>
+      #endif
+      #if compiler(>=5.3) && $AsyncAwait
+      public static func receivedFriendRequests(service: EdgeCore.EdgeClient.Service, authorization: EdgeCore.EdgeClient.Authorization) async -> Swift.Result<EdgeService.EdgeServiceClient.Backend.mFD.ReceivedFriendshipsResult, Foundation.NSError>
+      #endif
+      #if compiler(>=5.3) && $AsyncAwait
+      public static func sentFriendRequests(service: EdgeCore.EdgeClient.Service, authorization: EdgeCore.EdgeClient.Authorization) async -> Swift.Result<EdgeService.EdgeServiceClient.Backend.mFD.SentFriendshipsResult, Foundation.NSError>
+      #endif
+      #if compiler(>=5.3) && $AsyncAwait
+      public static func requestFriendship(service: EdgeCore.EdgeClient.Service, authorization: EdgeCore.EdgeClient.Authorization, friendId: Swift.String) async -> Swift.Result<EdgeService.EdgeServiceClient.Backend.mPO.NewUserData, Foundation.NSError>
+      #endif
+      #if compiler(>=5.3) && $AsyncAwait
+      public static func acceptFriendship(service: EdgeCore.EdgeClient.Service, authorization: EdgeCore.EdgeClient.Authorization, friendId: Swift.String) async -> Swift.Result<EdgeService.EdgeServiceClient.Backend.mFD.FriendRequestListData, Foundation.NSError>
+      #endif
+      #if compiler(>=5.3) && $AsyncAwait
+      public static func cancelFriendship(service: EdgeCore.EdgeClient.Service, authorization: EdgeCore.EdgeClient.Authorization, friendId: Swift.String) async -> Swift.Result<Swift.Void, Foundation.NSError>
+      #endif
+      public func encode(to encoder: any Swift.Encoder) throws
+      public init(from decoder: any Swift.Decoder) throws
+    }
+    public struct mTS : Swift.Codable {
+      public func encode(to encoder: any Swift.Encoder) throws
+      public init(from decoder: any Swift.Decoder) throws
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension EdgeService.EdgeServiceClient.Backend.mFD {
+  public struct Friends : Swift.Codable {
+    public var addedAt: Swift.String?
+    public var origin: Swift.String?
+    public var _self: Swift.String?
+    public var _id: Swift.String?
+    public init(addedAt: Swift.String?, origin: Swift.String?, _self: Swift.String?, _id: Swift.String?)
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Microservice.mBeam {
+  public struct BeamTokenData : Swift.Codable {
+    public var data: EdgeService.EdgeServiceClient.Microservice.mBeam.BeamToken?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Microservice.mBeam {
+  public struct NewBeam : Swift.Codable {
+    public var name: Swift.String
+    public var mimeType: Swift.String
+    public var url: Swift.String
+    public var nodeId: Swift.String
+    public var toNodeId: Swift.String
+    public var thumbnailContentHint: EdgeService.EdgeServiceClient.Microservice.mBeam.NewBeamThumbnailContentHint
+    public var expIn: Swift.Double
+    public var deletableTime: Swift.String?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Backend.mPO {
+  public struct NewUserData : Swift.Codable {
+    public var data: EdgeService.EdgeServiceClient.Backend.mPO.NewUser
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct NewUser : Swift.Codable {
+    public var _id: Swift.String
+    public var _self: Swift.String?
+    public init(_id: Swift.String, _self: Swift.String?)
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Backend.mTS {
+  public struct ThumbnailData : Swift.Codable {
+    public var data: EdgeService.EdgeServiceClient.Backend.mTS.Thumbnail?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Thumbnail : Swift.Codable {
+    public var _id: Swift.String?
+    public var _self: Swift.String?
+    public var createdAt: Swift.String?
+    public var updatedAt: Swift.String?
+    public var owner: EdgeCore.EdgeClient.JSONValue?
+    public var image: Swift.String?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Microservice.mBeam {
+  public struct NewBeamThumbnailContentHint : Swift.Codable {
+    public var image: Swift.String?
+    public var mimeType: Swift.String?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Backend.mFD {
+  public struct FriendRequests : Swift.Codable {
+    public var addedAt: Swift.String?
+    public var _id: Swift.String?
+    public var state: Swift.String?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Backend.mPO {
+  public struct Name : Swift.Codable {
+    public var formatted: Swift.String?
+    public var familyName: Swift.String?
+    public var givenName: Swift.String?
+    public var middleName: Swift.String?
+    public var honorificPrefix: Swift.String?
+    public var honorificSuffix: Swift.String?
+    public init(formatted: Swift.String?, familyName: Swift.String?, givenName: Swift.String?, middleName: Swift.String?, honorificPrefix: Swift.String?, honorificSuffix: Swift.String?)
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Microservice.mDrive {
+  public struct File : Swift.Codable {
+    public var id: Swift.String?
+    public var kind: Swift.String?
+    public var name: Swift.String?
+    public var mimeType: Swift.String?
+    public var createTime: Swift.String?
+    public var localId: Swift.String?
+    public var path: Swift.String?
+    public var thumbnailLink: Swift.String?
+    public var description: Swift.String {
+      get
+    }
+    public func contentUrl() -> Foundation.URL?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Microservice.mBeam {
+  public struct CreateBeam : Swift.Codable {
+    public var sourceNodeId: Swift.String
+    public var destinationNodeId: Swift.String
+    public var mimeType: Swift.String
+    public var name: Swift.String
+    public var thumbnailBase64: Swift.String
+    public var expiration: Swift.Int64
+    public var localStoragePath: Swift.String
+    public init(sourceNodeId: Swift.String, destinationNodeId: Swift.String, mimeType: Swift.String, name: Swift.String, thumbnailBase64: Swift.String, expiration: Swift.Int64, localStoragePath: Swift.String)
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Microservice.mBeam {
+  public struct BeamData : Swift.Codable {
+    public var data: EdgeService.EdgeServiceClient.Microservice.mBeam.Beam?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct BeamDataArray : Swift.Codable {
+    public var data: [EdgeService.EdgeServiceClient.Microservice.mBeam.Beam]?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Backend.mFD {
+  public struct RequestFriendList : Swift.Codable {
+    public var owner: EdgeService.EdgeServiceClient.Backend.mPO.NewUser?
+    public var _self: Swift.String?
+    public var requests: [EdgeService.EdgeServiceClient.Backend.mFD.RequestFriends]?
+    public var createdAt: Swift.String?
+    public var updatedAt: Swift.String?
+    public var _id: Swift.String?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Backend.mPO {
+  public struct UserUpdate : Swift.Codable {
+    public var name: EdgeService.EdgeServiceClient.Backend.mPO.Name?
+    public var displayName: Swift.String?
+    public var nickName: Swift.String?
+    public var preferredLanguage: Swift.String?
+    public var locale: Swift.String?
+    public var timeZone: Swift.String?
+    public var address: EdgeService.EdgeServiceClient.Backend.mPO.Address?
+    public var phoneNumber: Swift.String?
+    public var dateOfBirth: Swift.String?
+    public var gender: Swift.String?
+    public var location: EdgeService.EdgeServiceClient.Backend.mPO.UserLocation?
+    public var attributes: [EdgeService.EdgeServiceClient.Backend.mPO.UserItem]?
+    public var avatar: Swift.String?
+    public init(name: EdgeService.EdgeServiceClient.Backend.mPO.Name?, displayName: Swift.String?, nickName: Swift.String?, preferredLanguage: Swift.String?, locale: Swift.String?, timeZone: Swift.String?, address: EdgeService.EdgeServiceClient.Backend.mPO.Address?, phoneNumber: Swift.String?, gender: Swift.String?, dateOfBirth: Foundation.Date?, location: EdgeService.EdgeServiceClient.Backend.mPO.UserLocation?, attributes: [EdgeService.EdgeServiceClient.Backend.mPO.UserItem]?, avatar: Swift.String?)
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Backend.mPO {
+  public struct UserItem : Swift.Codable {
+    public var name: Swift.String
+    public var value: Swift.String
+    public init(name: Swift.String, value: Swift.String)
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Backend.mPO {
+  public struct Reference : Swift.Codable {
+    public var serverType: Swift.String?
+    public var resourceName: Swift.String
+    public var include: Swift.String?
+    public var _id: Swift.String?
+    public var _self: Swift.String
+    public init(serverType: Swift.String?, resourceName: Swift.String, include: Swift.String?, _id: Swift.String?, _self: Swift.String)
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Microservice.mSuperdrive {
+  public struct FriendAttribute : Swift.Codable {
+    public var name: Swift.String
+    public var value: Swift.String
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Microservice.mBeam {
+  public struct NewBeamData : Swift.Codable {
+    public var beam: EdgeService.EdgeServiceClient.Microservice.mBeam.NewBeam?
+    public var device: EdgeService.EdgeServiceClient.Microservice.mBeam.NewBeamDevice?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Backend.mPO {
+  public struct Address : Swift.Codable {
+    public var formatted: Swift.String?
+    public var streetAddress: Swift.String?
+    public var locality: Swift.String?
+    public var region: Swift.String?
+    public var postalCode: Swift.String?
+    public var country: Swift.String?
+    public init(formatted: Swift.String?, streetAddress: Swift.String?, locality: Swift.String?, region: Swift.String?, postalCode: Swift.String?, country: Swift.String?)
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension EdgeService.EdgeServiceClient.Backend.mPO.UserLocation.ModelType : Swift.Equatable {}
+extension EdgeService.EdgeServiceClient.Backend.mPO.UserLocation.ModelType : Swift.Hashable {}
+extension EdgeService.EdgeServiceClient.Backend.mPO.UserLocation.ModelType : Swift.RawRepresentable {}
+extension EdgeService.EdgeServiceClient.Microservice.mBeam.Beam.ReadStatus : Swift.Equatable {}
+extension EdgeService.EdgeServiceClient.Microservice.mBeam.Beam.ReadStatus : Swift.Hashable {}
+extension EdgeService.EdgeServiceClient.Microservice.mBeam.Beam.ReadStatus : Swift.RawRepresentable {}
+extension EdgeService.EdgeServiceClient.Backend.mPO.Consent.Source : Swift.Equatable {}
+extension EdgeService.EdgeServiceClient.Backend.mPO.Consent.Source : Swift.Hashable {}
+extension EdgeService.EdgeServiceClient.Backend.mPO.Consent.Source : Swift.RawRepresentable {}
+extension EdgeService.EdgeServiceClient.Microservice.mBeam.BeamToken.TokenStatus : Swift.Equatable {}
+extension EdgeService.EdgeServiceClient.Microservice.mBeam.BeamToken.TokenStatus : Swift.Hashable {}
+extension EdgeService.EdgeServiceClient.Microservice.mBeam.BeamToken.TokenStatus : Swift.RawRepresentable {}
+extension EdgeService.EdgeServiceClient.Backend.mFD.Friend.State : Swift.Equatable {}
+extension EdgeService.EdgeServiceClient.Backend.mFD.Friend.State : Swift.Hashable {}
+extension EdgeService.EdgeServiceClient.Backend.mPO.NewConsent.ModelType : Swift.Equatable {}
+extension EdgeService.EdgeServiceClient.Backend.mPO.NewConsent.ModelType : Swift.Hashable {}
+extension EdgeService.EdgeServiceClient.Backend.mPO.NewConsent.ModelType : Swift.RawRepresentable {}
+extension EdgeService.EdgeServiceClient.Backend.mPO.NewConsent.Source : Swift.Equatable {}
+extension EdgeService.EdgeServiceClient.Backend.mPO.NewConsent.Source : Swift.Hashable {}
+extension EdgeService.EdgeServiceClient.Backend.mPO.NewConsent.Source : Swift.RawRepresentable {}

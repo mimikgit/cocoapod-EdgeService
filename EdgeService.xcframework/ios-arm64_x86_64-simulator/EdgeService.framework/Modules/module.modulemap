@@ -1,0 +1,4 @@
+framework module EdgeService {
+  header "EdgeService-Swift.h"
+  requires objc
+}
