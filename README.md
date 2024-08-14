@@ -5,7 +5,7 @@ mimik Client Library provides a programmatic way to work with the edgeEngine Run
 @Metadata {
     @CallToAction(purpose: link, url: "https://github.com/mimikgit/cocoapod-EdgeService")
     @PageKind(article)
-    @PageColor(orange)
+    @PageColor(green)
 }
 
 
