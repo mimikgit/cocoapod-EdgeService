@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "EdgeService",
+    "printedName": "EdgeService",
     "children": [
       {
         "kind": "Import",
@@ -1603,6 +1603,20 @@
                         "conformances": [
                           {
                             "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
+                          {
+                            "kind": "Conformance",
                             "name": "Equatable",
                             "printedName": "Equatable",
                             "usr": "s:SQ",
@@ -2954,6 +2968,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Decodable",
                         "printedName": "Decodable",
                         "usr": "s:Se",
@@ -3258,6 +3286,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Decodable",
                         "printedName": "Decodable",
                         "usr": "s:Se",
@@ -3473,6 +3515,20 @@
                     ],
                     "isFromExtension": true,
                     "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
                       {
                         "kind": "Conformance",
                         "name": "Decodable",
@@ -3730,6 +3786,20 @@
                         ],
                         "enumRawTypeName": "String",
                         "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
                           {
                             "kind": "Conformance",
                             "name": "Equatable",
@@ -5343,6 +5413,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Decodable",
                         "printedName": "Decodable",
                         "usr": "s:Se",
@@ -6091,6 +6175,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Decodable",
                         "printedName": "Decodable",
                         "usr": "s:Se",
@@ -6282,6 +6380,20 @@
                     ],
                     "isFromExtension": true,
                     "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
                       {
                         "kind": "Conformance",
                         "name": "Decodable",
@@ -7079,6 +7191,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Decodable",
                         "printedName": "Decodable",
                         "usr": "s:Se",
@@ -7381,6 +7507,20 @@
                     ],
                     "isFromExtension": true,
                     "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
                       {
                         "kind": "Conformance",
                         "name": "Decodable",
@@ -8131,6 +8271,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Decodable",
                         "printedName": "Decodable",
                         "usr": "s:Se",
@@ -8322,6 +8476,20 @@
                     ],
                     "isFromExtension": true,
                     "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
                       {
                         "kind": "Conformance",
                         "name": "Decodable",
@@ -8539,6 +8707,20 @@
                     ],
                     "isFromExtension": true,
                     "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
                       {
                         "kind": "Conformance",
                         "name": "Decodable",
@@ -8845,6 +9027,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Decodable",
                         "printedName": "Decodable",
                         "usr": "s:Se",
@@ -8869,6 +9065,20 @@
                   "RawDocComment"
                 ],
                 "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  },
                   {
                     "kind": "Conformance",
                     "name": "Decodable",
@@ -9499,6 +9709,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Decodable",
                         "printedName": "Decodable",
                         "usr": "s:Se",
@@ -9823,6 +10047,20 @@
                     ],
                     "isFromExtension": true,
                     "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
                       {
                         "kind": "Conformance",
                         "name": "Decodable",
@@ -10412,6 +10650,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Decodable",
                         "printedName": "Decodable",
                         "usr": "s:Se",
@@ -10667,6 +10919,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Decodable",
                         "printedName": "Decodable",
                         "usr": "s:Se",
@@ -10691,6 +10957,20 @@
                   "RawDocComment"
                 ],
                 "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  },
                   {
                     "kind": "Conformance",
                     "name": "Decodable",
@@ -11559,6 +11839,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Decodable",
                         "printedName": "Decodable",
                         "usr": "s:Se",
@@ -11883,6 +12177,20 @@
                     ],
                     "isFromExtension": true,
                     "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
                       {
                         "kind": "Conformance",
                         "name": "Decodable",
@@ -12927,6 +13235,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Decodable",
                         "printedName": "Decodable",
                         "usr": "s:Se",
@@ -12953,6 +13275,20 @@
                 "conformances": [
                   {
                     "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  },
+                  {
+                    "kind": "Conformance",
                     "name": "Decodable",
                     "printedName": "Decodable",
                     "usr": "s:Se",
@@ -12975,6 +13311,22 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -14094,6 +14446,20 @@
                     ],
                     "isFromExtension": true,
                     "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
                       {
                         "kind": "Conformance",
                         "name": "Decodable",
@@ -15358,6 +15724,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Decodable",
                         "printedName": "Decodable",
                         "usr": "s:Se",
@@ -15502,6 +15882,20 @@
                         ],
                         "enumRawTypeName": "String",
                         "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
                           {
                             "kind": "Conformance",
                             "name": "Equatable",
@@ -16981,6 +17375,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Decodable",
                         "printedName": "Decodable",
                         "usr": "s:Se",
@@ -17181,6 +17589,20 @@
                     ],
                     "isFromExtension": true,
                     "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
                       {
                         "kind": "Conformance",
                         "name": "Decodable",
@@ -17399,6 +17821,20 @@
                     ],
                     "isFromExtension": true,
                     "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
                       {
                         "kind": "Conformance",
                         "name": "Decodable",
@@ -20577,6 +21013,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Decodable",
                         "printedName": "Decodable",
                         "usr": "s:Se",
@@ -20795,6 +21245,20 @@
                         ],
                         "enumRawTypeName": "String",
                         "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
                           {
                             "kind": "Conformance",
                             "name": "Equatable",
@@ -21426,6 +21890,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Decodable",
                         "printedName": "Decodable",
                         "usr": "s:Se",
@@ -21640,6 +22118,20 @@
                     ],
                     "isFromExtension": true,
                     "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
                       {
                         "kind": "Conformance",
                         "name": "Decodable",
@@ -21869,6 +22361,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Decodable",
                         "printedName": "Decodable",
                         "usr": "s:Se",
@@ -22049,6 +22555,20 @@
                         ],
                         "enumRawTypeName": "String",
                         "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
                           {
                             "kind": "Conformance",
                             "name": "Equatable",
@@ -22336,6 +22856,20 @@
                         ],
                         "enumRawTypeName": "String",
                         "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
                           {
                             "kind": "Conformance",
                             "name": "Equatable",
@@ -22934,6 +23468,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Decodable",
                         "printedName": "Decodable",
                         "usr": "s:Se",
@@ -23099,6 +23647,20 @@
                     ],
                     "isFromExtension": true,
                     "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
                       {
                         "kind": "Conformance",
                         "name": "Decodable",
@@ -23421,6 +23983,20 @@
                     ],
                     "isFromExtension": true,
                     "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
                       {
                         "kind": "Conformance",
                         "name": "Decodable",
@@ -24276,6 +24852,20 @@
                     ],
                     "isFromExtension": true,
                     "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
                       {
                         "kind": "Conformance",
                         "name": "Decodable",
@@ -26040,6 +26630,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Decodable",
                         "printedName": "Decodable",
                         "usr": "s:Se",
@@ -26327,6 +26931,20 @@
                     ],
                     "isFromExtension": true,
                     "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
                       {
                         "kind": "Conformance",
                         "name": "Decodable",
@@ -26991,6 +27609,20 @@
                     ],
                     "isFromExtension": true,
                     "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
                       {
                         "kind": "Conformance",
                         "name": "Decodable",
@@ -27848,6 +28480,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Decodable",
                         "printedName": "Decodable",
                         "usr": "s:Se",
@@ -27872,6 +28518,20 @@
                   "RawDocComment"
                 ],
                 "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  },
                   {
                     "kind": "Conformance",
                     "name": "Decodable",
@@ -28425,6 +29085,20 @@
                     ],
                     "isFromExtension": true,
                     "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
                       {
                         "kind": "Conformance",
                         "name": "Decodable",
@@ -29200,6 +29874,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Decodable",
                         "printedName": "Decodable",
                         "usr": "s:Se",
@@ -29615,6 +30303,20 @@
                         "conformances": [
                           {
                             "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
+                          {
+                            "kind": "Conformance",
                             "name": "Decodable",
                             "printedName": "Decodable",
                             "usr": "s:Se",
@@ -29725,6 +30427,20 @@
                     ],
                     "isFromExtension": true,
                     "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
                       {
                         "kind": "Conformance",
                         "name": "Decodable",
@@ -30141,6 +30857,20 @@
                     ],
                     "isFromExtension": true,
                     "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
                       {
                         "kind": "Conformance",
                         "name": "Decodable",
@@ -31030,6 +31760,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Decodable",
                         "printedName": "Decodable",
                         "usr": "s:Se",
@@ -31445,6 +32189,20 @@
                         "conformances": [
                           {
                             "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
+                          {
+                            "kind": "Conformance",
                             "name": "Decodable",
                             "printedName": "Decodable",
                             "usr": "s:Se",
@@ -31520,6 +32278,20 @@
                     ],
                     "isFromExtension": true,
                     "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
                       {
                         "kind": "Conformance",
                         "name": "Decodable",
@@ -31712,6 +32484,20 @@
                     ],
                     "isFromExtension": true,
                     "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
                       {
                         "kind": "Conformance",
                         "name": "Decodable",
@@ -32776,6 +33562,20 @@
                         "conformances": [
                           {
                             "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
+                          {
+                            "kind": "Conformance",
                             "name": "Equatable",
                             "printedName": "Equatable",
                             "usr": "s:SQ",
@@ -33017,6 +33817,20 @@
                     ],
                     "isFromExtension": true,
                     "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
                       {
                         "kind": "Conformance",
                         "name": "Decodable",
@@ -33434,6 +34248,20 @@
                         "conformances": [
                           {
                             "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
+                          {
+                            "kind": "Conformance",
                             "name": "Decodable",
                             "printedName": "Decodable",
                             "usr": "s:Se",
@@ -33544,6 +34372,20 @@
                     ],
                     "isFromExtension": true,
                     "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
                       {
                         "kind": "Conformance",
                         "name": "Decodable",
@@ -34151,6 +34993,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Decodable",
                         "printedName": "Decodable",
                         "usr": "s:Se",
@@ -34565,6 +35421,20 @@
                     ],
                     "isFromExtension": true,
                     "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
                       {
                         "kind": "Conformance",
                         "name": "Decodable",
@@ -35340,6 +36210,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Decodable",
                         "printedName": "Decodable",
                         "usr": "s:Se",
@@ -35364,6 +36248,20 @@
                   "RawDocComment"
                 ],
                 "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  },
                   {
                     "kind": "Conformance",
                     "name": "Decodable",
@@ -35612,6 +36510,20 @@
                     ],
                     "isFromExtension": true,
                     "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
                       {
                         "kind": "Conformance",
                         "name": "Decodable",
@@ -36362,6 +37274,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Decodable",
                         "printedName": "Decodable",
                         "usr": "s:Se",
@@ -36388,6 +37314,20 @@
                 "conformances": [
                   {
                     "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  },
+                  {
+                    "kind": "Conformance",
                     "name": "Decodable",
                     "printedName": "Decodable",
                     "usr": "s:Se",
@@ -36410,6 +37350,22 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -36473,6 +37429,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -36971,27 +37941,6 @@
       "value": "\"Point\""
     },
     {
-      "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mPO\/Profile\/UserLocation.swift",
-      "kind": "StringLiteral",
-      "offset": 372,
-      "length": 7,
-      "value": "\"Point\""
-    },
-    {
-      "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mFD\/FriendRequestList.swift",
-      "kind": "StringLiteral",
-      "offset": 987,
-      "length": 4,
-      "value": "\"id\""
-    },
-    {
-      "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mFD\/FriendRequestList.swift",
-      "kind": "StringLiteral",
-      "offset": 1017,
-      "length": 6,
-      "value": "\"self\""
-    },
-    {
       "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mFD\/FriendRequestList.swift",
       "kind": "StringLiteral",
       "offset": 987,
@@ -37013,20 +37962,6 @@
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mPO\/Profile\/User.swift",
-      "kind": "StringLiteral",
-      "offset": 5594,
-      "length": 4,
-      "value": "\"id\""
-    },
-    {
-      "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mPO\/Profile\/Consent.swift",
-      "kind": "StringLiteral",
-      "offset": 1482,
-      "length": 4,
-      "value": "\"id\""
-    },
-    {
       "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mPO\/Profile\/Consent.swift",
       "kind": "StringLiteral",
       "offset": 1482,
@@ -37037,27 +37972,6 @@
       "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mFD\/RequestFriends.swift",
       "kind": "StringLiteral",
       "offset": 585,
-      "length": 4,
-      "value": "\"id\""
-    },
-    {
-      "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mFD\/RequestFriends.swift",
-      "kind": "StringLiteral",
-      "offset": 585,
-      "length": 4,
-      "value": "\"id\""
-    },
-    {
-      "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mFD\/FriendList.swift",
-      "kind": "StringLiteral",
-      "offset": 1638,
-      "length": 6,
-      "value": "\"self\""
-    },
-    {
-      "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mFD\/FriendList.swift",
-      "kind": "StringLiteral",
-      "offset": 1716,
       "length": 4,
       "value": "\"id\""
     },
@@ -37090,27 +38004,6 @@
       "value": "\"terms-of-service\""
     },
     {
-      "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mPO\/Profile\/NewConsent.swift",
-      "kind": "StringLiteral",
-      "offset": 553,
-      "length": 18,
-      "value": "\"terms-of-service\""
-    },
-    {
-      "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mFD\/Friends.swift",
-      "kind": "StringLiteral",
-      "offset": 1133,
-      "length": 6,
-      "value": "\"self\""
-    },
-    {
-      "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mFD\/Friends.swift",
-      "kind": "StringLiteral",
-      "offset": 1163,
-      "length": 4,
-      "value": "\"id\""
-    },
-    {
       "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mFD\/Friends.swift",
       "kind": "StringLiteral",
       "offset": 1133,
@@ -37139,20 +38032,6 @@
       "value": "\"self\""
     },
     {
-      "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mPO\/Profile\/NewUser.swift",
-      "kind": "StringLiteral",
-      "offset": 832,
-      "length": 4,
-      "value": "\"id\""
-    },
-    {
-      "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mPO\/Profile\/NewUser.swift",
-      "kind": "StringLiteral",
-      "offset": 862,
-      "length": 6,
-      "value": "\"self\""
-    },
-    {
       "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mPO\/Thumbnail\/Thumbnail.swift",
       "kind": "StringLiteral",
       "offset": 814,
@@ -37165,27 +38044,6 @@
       "offset": 844,
       "length": 6,
       "value": "\"self\""
-    },
-    {
-      "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mPO\/Thumbnail\/Thumbnail.swift",
-      "kind": "StringLiteral",
-      "offset": 814,
-      "length": 4,
-      "value": "\"id\""
-    },
-    {
-      "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mPO\/Thumbnail\/Thumbnail.swift",
-      "kind": "StringLiteral",
-      "offset": 844,
-      "length": 6,
-      "value": "\"self\""
-    },
-    {
-      "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mFD\/FriendRequests.swift",
-      "kind": "StringLiteral",
-      "offset": 577,
-      "length": 4,
-      "value": "\"id\""
     },
     {
       "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mFD\/FriendRequests.swift",
@@ -37230,20 +38088,6 @@
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mFD\/RequestFriendList.swift",
-      "kind": "StringLiteral",
-      "offset": 870,
-      "length": 6,
-      "value": "\"self\""
-    },
-    {
-      "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mFD\/RequestFriendList.swift",
-      "kind": "StringLiteral",
-      "offset": 980,
-      "length": 4,
-      "value": "\"id\""
-    },
-    {
       "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mPO\/Profile\/UserUpdate.swift",
       "kind": "StringLiteral",
       "offset": 3429,
@@ -37263,20 +38107,6 @@
       "offset": 3532,
       "length": 12,
       "value": "\"yyyy-MM-dd\""
-    },
-    {
-      "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mPO\/Profile\/Reference.swift",
-      "kind": "StringLiteral",
-      "offset": 1754,
-      "length": 4,
-      "value": "\"id\""
-    },
-    {
-      "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mPO\/Profile\/Reference.swift",
-      "kind": "StringLiteral",
-      "offset": 1784,
-      "length": 6,
-      "value": "\"self\""
     },
     {
       "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mPO\/Profile\/Reference.swift",
