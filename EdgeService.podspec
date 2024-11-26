@@ -9,16 +9,19 @@
 Pod::Spec.new do |s|
 
   s.name         = "EdgeService"
-  s.version      = "5.7.0"
-  s.summary      = "mimik service client library"
+  s.version      = "5.8.0"
+  s.summary      = "mimik Client Library (Service)"
 
   s.description  = <<-DESC
- The purpose of the mimik Client Library for iOS is to provide a programmatic way to work with the edgeEngine Runtime to access information about the mobile device on which the application is running, as well as mobile devices running within a cluster of mobile devices that are hosting the edgeEngine Runtime. Also, to allow developers to use edge microservices running within a particular cluster.
+mimik Client Library provides a programmatic interface for working with the mim OE Runtime (formerly known as edgeEngine), accessing information about mobile device clusters, using on-device lightweight RESTful API microservices, and optionally integrating with mimik ai components.
 
-The mimik Client Library for iOS suite consists of three individual cocoapod components:
+Please note the following mimik Client Library client library cocoapods:
+
+    - mim-OE-ai-SE-iOS-developer
     - EdgeCore
-    - EdgeEngine (or EdgeEngineDeveloper)
-    - EdgeService
+    - EdgeService (optional)
+
+These components provide various APIs that help developers with core operations, such as setting up the mim OE Runtime (formerly known as edgeEngine), authenticating developers, deploying edge microservices, and optionally integrating with mimik ai.
   DESC
 
   s.homepage     = "https://github.com/mimikgit/cocoapod-EdgeService"
@@ -30,9 +33,9 @@ The mimik Client Library for iOS suite consists of three individual cocoapod com
 
   s.vendored_frameworks = "EdgeService.xcframework"
 
-  s.dependency 'EdgeCore', '~> 5.7.0'
+  s.dependency 'EdgeCore', '~> 5.8.0'
   s.dependency 'Alamofire', '~> 5.10.1'
   s.dependency 'SwiftyJSON', '~> 5.0.2'
 
-  s.platform = 'ios', '15.0'
+  s.platform = 'ios', '16.0'
 end

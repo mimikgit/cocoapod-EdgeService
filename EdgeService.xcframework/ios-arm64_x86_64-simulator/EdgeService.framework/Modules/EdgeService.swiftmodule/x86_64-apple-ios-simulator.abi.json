@@ -168,22 +168,19 @@
         "declKind": "Import",
         "moduleName": "EdgeService",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "EdgeService"
       },
       {
         "kind": "Import",
         "name": "SwiftyJSON",
         "printedName": "SwiftyJSON",
         "declKind": "Import",
-        "moduleName": "EdgeService"
+        "moduleName": "EdgeService",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -200,7 +197,10 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "EdgeService"
+        "moduleName": "EdgeService",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -221,7 +221,10 @@
         "name": "UniformTypeIdentifiers",
         "printedName": "UniformTypeIdentifiers",
         "declKind": "Import",
-        "moduleName": "EdgeService"
+        "moduleName": "EdgeService",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -286,7 +289,10 @@
         "name": "SwiftyJSON",
         "printedName": "SwiftyJSON",
         "declKind": "Import",
-        "moduleName": "EdgeService"
+        "moduleName": "EdgeService",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -403,20 +409,14 @@
       },
       {
         "kind": "Import",
-        "name": "EdgeCore",
-        "printedName": "EdgeCore",
-        "declKind": "Import",
-        "moduleName": "EdgeService",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "EdgeService"
+        "moduleName": "EdgeService",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -449,6 +449,7 @@
         "declKind": "Import",
         "moduleName": "EdgeService",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -594,7 +595,10 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "EdgeService"
+        "moduleName": "EdgeService",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -644,6 +648,7 @@
         "declKind": "Import",
         "moduleName": "EdgeService",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -738,20 +743,14 @@
       },
       {
         "kind": "Import",
-        "name": "EdgeCore",
-        "printedName": "EdgeCore",
-        "declKind": "Import",
-        "moduleName": "EdgeService",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "EdgeService"
+        "moduleName": "EdgeService",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -760,6 +759,7 @@
         "declKind": "Import",
         "moduleName": "EdgeService",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -768,28 +768,20 @@
         "name": "EdgeCore",
         "printedName": "EdgeCore",
         "declKind": "Import",
-        "moduleName": "EdgeService"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "EdgeService"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftyJSON",
-        "printedName": "SwiftyJSON",
-        "declKind": "Import",
-        "moduleName": "EdgeService"
+        "moduleName": "EdgeService",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
-        "moduleName": "EdgeService"
+        "moduleName": "EdgeService",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -2993,6 +2985,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -3311,6 +3310,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -3542,6 +3548,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -5438,6 +5451,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -6200,6 +6220,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -6407,6 +6434,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -7216,6 +7250,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -7534,6 +7575,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -8296,6 +8344,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -8503,6 +8558,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -8734,6 +8796,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -9052,6 +9121,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   }
@@ -9092,6 +9168,13 @@
                     "printedName": "Encodable",
                     "usr": "s:SE",
                     "mangledName": "$sSE"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Sendable",
+                    "printedName": "Sendable",
+                    "usr": "s:s8SendableP",
+                    "mangledName": "$ss8SendableP"
                   }
                 ]
               },
@@ -9734,6 +9817,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -10074,6 +10164,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -10675,6 +10772,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -10944,6 +11048,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   }
@@ -10984,6 +11095,13 @@
                     "printedName": "Encodable",
                     "usr": "s:SE",
                     "mangledName": "$sSE"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Sendable",
+                    "printedName": "Sendable",
+                    "usr": "s:s8SendableP",
+                    "mangledName": "$ss8SendableP"
                   }
                 ]
               },
@@ -11864,6 +11982,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -12204,6 +12329,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -13260,6 +13392,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   }
@@ -13300,6 +13439,13 @@
                     "printedName": "Encodable",
                     "usr": "s:SE",
                     "mangledName": "$sSE"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Sendable",
+                    "printedName": "Sendable",
+                    "usr": "s:s8SendableP",
+                    "mangledName": "$ss8SendableP"
                   }
                 ]
               }
@@ -14473,6 +14619,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -15749,6 +15902,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -17400,6 +17560,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -17616,6 +17783,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -17848,6 +18022,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -21038,6 +21219,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -21915,6 +22103,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -22145,6 +22340,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -22386,6 +22588,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -23493,6 +23702,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -23674,6 +23890,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -24010,6 +24233,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -24879,6 +25109,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -26655,6 +26892,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -26958,6 +27202,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -27636,6 +27887,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -28505,6 +28763,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   }
@@ -28545,6 +28810,13 @@
                     "printedName": "Encodable",
                     "usr": "s:SE",
                     "mangledName": "$sSE"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Sendable",
+                    "printedName": "Sendable",
+                    "usr": "s:s8SendableP",
+                    "mangledName": "$ss8SendableP"
                   }
                 ]
               },
@@ -29112,6 +29384,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -29899,6 +30178,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -30328,6 +30614,13 @@
                             "printedName": "Encodable",
                             "usr": "s:SE",
                             "mangledName": "$sSE"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Sendable",
+                            "printedName": "Sendable",
+                            "usr": "s:s8SendableP",
+                            "mangledName": "$ss8SendableP"
                           }
                         ]
                       },
@@ -30454,6 +30747,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -30884,6 +31184,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -31785,6 +32092,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -32214,6 +32528,13 @@
                             "printedName": "Encodable",
                             "usr": "s:SE",
                             "mangledName": "$sSE"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Sendable",
+                            "printedName": "Sendable",
+                            "usr": "s:s8SendableP",
+                            "mangledName": "$ss8SendableP"
                           }
                         ]
                       },
@@ -32305,6 +32626,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -32511,6 +32839,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -33844,6 +34179,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -34273,6 +34615,13 @@
                             "printedName": "Encodable",
                             "usr": "s:SE",
                             "mangledName": "$sSE"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Sendable",
+                            "printedName": "Sendable",
+                            "usr": "s:s8SendableP",
+                            "mangledName": "$ss8SendableP"
                           }
                         ]
                       },
@@ -34399,6 +34748,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -35018,6 +35374,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -35448,6 +35811,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -36235,6 +36605,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   }
@@ -36275,6 +36652,13 @@
                     "printedName": "Encodable",
                     "usr": "s:SE",
                     "mangledName": "$sSE"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Sendable",
+                    "printedName": "Sendable",
+                    "usr": "s:s8SendableP",
+                    "mangledName": "$ss8SendableP"
                   }
                 ]
               },
@@ -36537,6 +36921,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   },
@@ -37299,6 +37690,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Sendable",
+                        "printedName": "Sendable",
+                        "usr": "s:s8SendableP",
+                        "mangledName": "$ss8SendableP"
                       }
                     ]
                   }
@@ -37339,6 +37737,13 @@
                     "printedName": "Encodable",
                     "usr": "s:SE",
                     "mangledName": "$sSE"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Sendable",
+                    "printedName": "Sendable",
+                    "usr": "s:s8SendableP",
+                    "mangledName": "$ss8SendableP"
                   }
                 ]
               }
@@ -37456,6 +37861,13 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -37575,15 +37987,9 @@
         "declKind": "Import",
         "moduleName": "EdgeService",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "EdgeService"
       },
       {
         "kind": "Import",
@@ -37655,20 +38061,14 @@
       },
       {
         "kind": "Import",
-        "name": "EdgeCore",
-        "printedName": "EdgeCore",
-        "declKind": "Import",
-        "moduleName": "EdgeService",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "EdgeService"
+        "moduleName": "EdgeService",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -37788,20 +38188,14 @@
       },
       {
         "kind": "Import",
-        "name": "EdgeCore",
-        "printedName": "EdgeCore",
-        "declKind": "Import",
-        "moduleName": "EdgeService",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "SwiftyJSON",
         "printedName": "SwiftyJSON",
         "declKind": "Import",
-        "moduleName": "EdgeService"
+        "moduleName": "EdgeService",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -37936,189 +38330,189 @@
     {
       "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mPO\/Profile\/UserLocation.swift",
       "kind": "StringLiteral",
-      "offset": 372,
+      "offset": 382,
       "length": 7,
       "value": "\"Point\""
     },
     {
       "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mFD\/FriendRequestList.swift",
       "kind": "StringLiteral",
-      "offset": 987,
+      "offset": 1007,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mFD\/FriendRequestList.swift",
       "kind": "StringLiteral",
-      "offset": 1017,
+      "offset": 1037,
       "length": 6,
       "value": "\"self\""
     },
     {
       "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mPO\/Profile\/User.swift",
       "kind": "StringLiteral",
-      "offset": 5594,
+      "offset": 5620,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mPO\/Profile\/Consent.swift",
       "kind": "StringLiteral",
-      "offset": 1482,
+      "offset": 1499,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mFD\/RequestFriends.swift",
       "kind": "StringLiteral",
-      "offset": 585,
+      "offset": 595,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mFD\/FriendList.swift",
       "kind": "StringLiteral",
-      "offset": 1638,
+      "offset": 1648,
       "length": 6,
       "value": "\"self\""
     },
     {
       "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mFD\/FriendList.swift",
       "kind": "StringLiteral",
-      "offset": 1716,
+      "offset": 1726,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/EdgeServices\/Clusters\/Public\/EdgeProvider.Clusters+FriendNodesData.swift",
       "kind": "Array",
-      "offset": 815,
+      "offset": 842,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mPO\/Profile\/NewConsent.swift",
       "kind": "StringLiteral",
-      "offset": 553,
+      "offset": 554,
       "length": 18,
       "value": "\"terms-of-service\""
     },
     {
       "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mFD\/Friends.swift",
       "kind": "StringLiteral",
-      "offset": 1133,
+      "offset": 1143,
       "length": 6,
       "value": "\"self\""
     },
     {
       "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mFD\/Friends.swift",
       "kind": "StringLiteral",
-      "offset": 1163,
+      "offset": 1173,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mPO\/Profile\/NewUser.swift",
       "kind": "StringLiteral",
-      "offset": 832,
+      "offset": 852,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mPO\/Profile\/NewUser.swift",
       "kind": "StringLiteral",
-      "offset": 862,
+      "offset": 882,
       "length": 6,
       "value": "\"self\""
     },
     {
       "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mPO\/Thumbnail\/Thumbnail.swift",
       "kind": "StringLiteral",
-      "offset": 814,
+      "offset": 823,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mPO\/Thumbnail\/Thumbnail.swift",
       "kind": "StringLiteral",
-      "offset": 844,
+      "offset": 853,
       "length": 6,
       "value": "\"self\""
     },
     {
       "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mFD\/FriendRequests.swift",
       "kind": "StringLiteral",
-      "offset": 577,
+      "offset": 587,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/Internal\/mPO\/EdgeClient+PrivateProfile.swift",
       "kind": "StringLiteral",
-      "offset": 11650,
+      "offset": 11690,
       "length": 13,
       "value": "\"en_US_POSIX\""
     },
     {
       "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/Internal\/mPO\/EdgeClient+PrivateProfile.swift",
       "kind": "IntegerLiteral",
-      "offset": 11719,
+      "offset": 11759,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/Internal\/mPO\/EdgeClient+PrivateProfile.swift",
       "kind": "StringLiteral",
-      "offset": 11753,
+      "offset": 11793,
       "length": 32,
       "value": "\"yyyy-MM-dd'T'HH:mm:ss.SSSXXXXX\""
     },
     {
       "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mFD\/RequestFriendList.swift",
       "kind": "StringLiteral",
-      "offset": 870,
+      "offset": 880,
       "length": 6,
       "value": "\"self\""
     },
     {
       "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mFD\/RequestFriendList.swift",
       "kind": "StringLiteral",
-      "offset": 980,
+      "offset": 990,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mPO\/Profile\/UserUpdate.swift",
       "kind": "StringLiteral",
-      "offset": 3429,
+      "offset": 3430,
       "length": 13,
       "value": "\"en_US_POSIX\""
     },
     {
       "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mPO\/Profile\/UserUpdate.swift",
       "kind": "IntegerLiteral",
-      "offset": 3498,
+      "offset": 3499,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mPO\/Profile\/UserUpdate.swift",
       "kind": "StringLiteral",
-      "offset": 3532,
+      "offset": 3533,
       "length": 12,
       "value": "\"yyyy-MM-dd\""
     },
     {
       "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mPO\/Profile\/Reference.swift",
       "kind": "StringLiteral",
-      "offset": 1754,
+      "offset": 1764,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/rb\/Code\/client-libraries\/ios-edge-service\/EdgeService\/SwaggerHubModels\/mPO\/Profile\/Reference.swift",
       "kind": "StringLiteral",
-      "offset": 1784,
+      "offset": 1794,
       "length": 6,
       "value": "\"self\""
     }
