@@ -9,19 +9,20 @@
 Pod::Spec.new do |s|
 
   s.name         = "EdgeService"
-  s.version      = "5.8.0"
+  s.version      = "5.9.3"
   s.summary      = "mimik Client Library (Service)"
 
   s.description  = <<-DESC
-mimik Client Library provides a programmatic interface for working with the mim OE Runtime (formerly known as edgeEngine), accessing information about mobile device clusters, using on-device lightweight RESTful API microservices, and optionally integrating with mimik ai components.
+One-stop, static API entry point for integrating with both microservices that run on the `mim OE` runtime (`Runtime`) and backend microservices (`Backend`) that run in the traditional cloud.
 
-Please note the following mimik Client Library client library cocoapods:
+`ClientGatewayAccess` organizes APIs into two categories:
 
-    - mim-OE-ai-SE-iOS-developer
-    - EdgeCore
-    - EdgeService (optional)
+- **`Runtime`** — microservices that **run on the `mim OE` runtime**.
+  These can run locally on devices *or* on cloud instances (e.g., AWS/GCP VMs) that host the runtime and act like runtime-enabled nodes.
+- **`Backend`** — **traditional backend microservices** that run in the cloud.
+  These **do not** use the `mim OE` runtime.
 
-These components provide various APIs that help developers with core operations, such as setting up the mim OE Runtime (formerly known as edgeEngine), authenticating developers, deploying edge microservices, and optionally integrating with mimik ai.
+This API is used by the *mimik Access* app and is available for integration in third-party applications.
   DESC
 
   s.homepage     = "https://github.com/mimikgit/cocoapod-EdgeService"
@@ -33,7 +34,7 @@ These components provide various APIs that help developers with core operations,
 
   s.vendored_frameworks = "EdgeService.xcframework"
 
-  s.dependency 'EdgeCore', '~> 5.8.0'
+  s.dependency 'EdgeCore', '~> 5.9.3'
   s.dependency 'Alamofire', '~> 5.10.1'
   s.dependency 'SwiftyJSON', '~> 5.0.2'
 
